@@ -1,0 +1,48 @@
+# ==========================
+# LaTeX build files
+# ==========================
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+# ==========================
+# Output files
+# ==========================
+*.dvi
+*.ps
+
+# ==========================
+# Editor / tool cache
+# ==========================
+# VSCode / TeXstudio / Overleaf / etc.
+.vscode/
+.idea/
+*.swp
+*.bak
+*~
+*.tmp
+*.synctex(busy)
+*.DS_Store
+
+# ==========================
+# OS-specific junk
+# ==========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini

@@ -1,14 +1,19 @@
-\documentclass[10.5pt,letterpaper]{article}
+\documentclass[10pt,letterpaper]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[margin=0.7in]{geometry}
+\usepackage[margin=0.6in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
-\setlist[itemize]{noitemsep, topsep=0pt}
-\renewcommand{\baselinestretch}{1.15}
+\usepackage{titlesec}
+
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
 \setlength{\parindent}{0pt}
+
+\renewcommand{\baselinestretch}{1.08}
+
+\titlespacing*{\section}{0pt}{0.7em}{0.35em}
 
 \begin{document}
 	
@@ -20,116 +25,135 @@
 	\end{center}
 	
 	\hrule
-	\vspace{0.5em}
 	
 	% ===== Professional Summary =====
 	\section*{Professional Summary}
-	Full-stack software developer with over 5 years of experience designing and delivering web applications using Laravel, Vue.js, RESTful APIs, Docker, and relational databases (MySQL, PostgreSQL). Skilled in building efficient backend systems, deploying containerized services, and writing maintainable, test-driven code. Experienced in agile environments, migrating legacy systems, and improving software reliability through testing and clean architecture. Focused on delivering measurable value to users and teams.
+	Software engineer with a strong backend focus and experience working on production systems at different stages of maturity. Most of my work has been around Laravel-based platforms, where I’ve handled data-intensive systems, APIs consumed by mobile applications, and internal tools supporting operational workflows. I tend working close to system boundaries, making pragmatic technical decisions around data quality, performance, reliability, and API contracts. Over time, my responsibilities have naturally grown from guided execution to full technical ownership in individual contributor roles.
 	
 	% ===== Professional Experience =====
 	\section*{Professional Experience}
 	
-	\textbf{Software Consultant} - Amaris Consulting, Bogotá, Colombia
-	\hfill
-	\textit{Feb 2025 – Apr 2025}
+	\textbf{Software Consultant} – {Amaris Consulting}, {Bogotá, Colombia}
+	\hfill \textit{Feb 2025 – Apr 2025}
 	\begin{itemize}
-		\item Launched over 8 user-facing features based on end-user requirements in a fast-paced agile environment.
-		\item Resolved over 20 support tickets and reduced bug backlog by approximately 30\% within the first month.
-		\item Provided maintenance and optimization for key backend modules, improving response time by 20\%.
+		\item Contributed to backend feature design and implementation in a high-velocity agile environment, translating ambiguous business requirements into scalable solutions.
+		\item Identified and addressed systemic backend issues, reducing recurring production bugs and lowering overall incident volume by approximately 30\%.
+		\item Optimized critical backend modules through refactoring and query improvements, achieving a 20\% reduction in response times.
 	\end{itemize}
 	
-	\textbf{Development Engineer} - Pacaribe S.A. E.S.P., Bogotá, Colombia
-	\hfill
-	\textit{Jul 2024 – Jan 2025}
+	\textbf{Development Engineer} – {Pacaribe S.A. E.S.P.}, {Bogotá, Colombia}
+	\hfill \textit{Jul 2024 – Jan 2025}
 	\begin{itemize}
-		\item Implemented core business features in internal Laravel-based applications, impacting daily workflows for over 50 staff.
-		\item Wrote and maintained more than 40 PHPUnit test cases, achieving approximately 80\% code coverage and improving deployment confidence.
-		\item Created technical documentation and collaborated with analysts to clarify and refine requirements.
+		\item Designed and implemented backend features in Laravel-based internal systems handling large-scale, heterogeneous datasets, focusing on data quality, efficient access patterns, and system stability.
+		\item Led data depuration and validation strategies to prevent low-quality or inconsistent data from reaching frontend applications, improving performance and reducing downstream processing overhead.
+		\item Optimized database queries and data models to support high-volume information retrieval, significantly improving response times and overall system efficiency.
 	\end{itemize}
 	
-	\textbf{Laravel Developer (Freelance)} - FrenziApp
-	\hfill
-	\textit{Feb 2024 – Apr 2024}
+	\textbf{Laravel Developer (Freelance)} – {FrenziApp}
+	\hfill \textit{Feb 2024 – Apr 2024}
 	\begin{itemize}
-		\item Refactored backend logic and restructured API endpoints, reducing response times by approximately 35\%.
-		\item Dockerized the project environment, reducing onboarding time for new developers by 50\%.
-		\item Wrote integration tests and improved backend reliability with better error handling and input validation.
+		\item Took ownership of backend technical decisions for an existing Laravel system consumed by two native mobile applications, aligning API design and behavior with mobile client requirements.
+		\item Refactored and stabilized backend logic and API endpoints, achieving approximately a 35\% improvement in response times.
+		\item Designed and implemented new backend modules for route calculation and cost estimation, addressing core domain logic in a transportation platform.
+		\item Defined and documented backend contracts using Swagger, reducing integration friction and ambiguity for mobile development teams.
+		\item Strengthened backend reliability through integration testing, structured error handling, and stricter input validation.
 	\end{itemize}
 	
-	\textbf{Laravel Developer (Freelance)} — Ink Master Colombia
-	\hfill
-	\textit{Aug 2023 – Feb 2024}
+	\textbf{Laravel Developer (Freelance)} — {Ink Master Colombia}
+	\hfill \textit{Aug 2023 – Feb 2024}
 	\begin{itemize}
-		\item Architected a custom CRM system with modules for inventory, clients, suppliers, and billing, used daily by over 10 staff.
-		\item Reduced invoice generation time by 70\% through automation and PDF generation.
-		\item Implemented Docker support and test automation to streamline deployment and ensure reliability.
+		\item Designed and built a monolithic CRM system using Laravel and Vue.js, taking full responsibility for backend and frontend architecture, data modeling, and deployment decisions.
+		\item Implemented core business modules (clients, inventory/products, sales, suppliers), structuring domain logic to support daily operational workflows.
+		\item Automated generation of sales receipts and transactional records (PDF), reducing document processing time by approximately 70\%.
+		\item Established containerized deployment and test automation to ensure environment consistency, reliability, and maintainability.
 	\end{itemize}
 	
-	\textbf{Computer Programmer} — Solvo Global, Bogotá, Colombia
-	\hfill
-	\textit{Sep 2022 – Jun 2023}
+	\textbf{Computer Programmer} — {Solvo Global}, {Bogotá, Colombia}
+	\hfill \textit{Sep 2022 – Jun 2023}
 	\begin{itemize}
-		\item Analyzed client requirements and developed tools supporting over 5,000 users.
-		\item Reduced reported bugs by 45\% through test-driven development and code reviews.
-		\item Delivered four reusable modules that were adopted by other teams across the company.
+		\item Contributed to a Laravel and Vue.js monolithic platform used for nursing shift scheduling across the United States, operating in a healthcare domain with high reliability requirements.
+		\item Worked with an event-driven workflow engine (Camunda) integrated into the backend to handle asynchronous processes and improve system resilience under failure scenarios.
+		\item Improved code quality and system stability through test-driven development and structured code reviews, contributing to a 45\% reduction in reported defects.
+		\item Developed reusable backend modules that were later adopted by other teams, promoting consistency and reuse across the platform.
 	\end{itemize}
 	
-	\textbf{Developer I} — THOMAS MTI, Bogotá, Colombia
-	\hfill
-	\textit{Apr 2021 – Nov 2021}
+	\textbf{Developer I} — {THOMAS MTI}, {Bogotá, Colombia}
+	\hfill \textit{Apr 2021 – Nov 2021}
 	\begin{itemize}
-		\item Migrated an enterprise-grade application from Delphi to Angular/.NET, reducing maintenance costs by 50\%.
-		\item Collaborated in a team of three to revamp UI/UX and improve usability scores in internal feedback.
-		\item Performed complex data migration scripts ensuring 100\% data integrity across legacy systems.
+		\item Contributed to the migration of an enterprise application from Delphi to Angular/.NET, implementing assigned components under senior guidance and helping reduce long-term maintenance costs.
+		\item Collaborated within a small team to improve UI/UX based on internal user feedback, supporting usability improvements in legacy workflows.
+		\item Developed and executed data migration scripts, ensuring data integrity and consistency during system transitions.
 	\end{itemize}
 	
-	\textbf{Software Development Analyst} — CLTech, Bogotá, Colombia
-	\hfill
-	\textit{Jul 2019 – Feb 2021}
+	\textbf{Software Development Analyst} — {CLTech}, {Bogotá, Colombia}
+	\hfill \textit{Jul 2019 – Feb 2021}
 	\begin{itemize}
-		\item Designed and implemented software aligned with ISO 15189 standards for clinical laboratories.
-		\item Decomposed a monolith into a RESTful API-based system, improving scalability and reducing complexity.
-		\item Led CRM module improvements that increased operational efficiency across three departments.
+		\item Implemented software components for clinical laboratory systems aligned with ISO 15189 standards, transitioning from junior to mid-level responsibilities under senior guidance.
+		\item Contributed to the gradual decomposition of a monolithic application into RESTful APIs, gaining hands-on experience in modular backend design.
+		\item Delivered improvements to CRM-related modules that supported operational workflows across multiple departments.
 	\end{itemize}
 	
-	\textbf{Software Developer} — Recaudo Bogotá S.A.S., Bogotá, Colombia  
-	\hfill
-	\textit{Jul 2018 – Jan 2019}
+	\textbf{Software Developer} — {Recaudo Bogotá S.A.S.}, {Bogotá, Colombia}
+	\hfill \textit{Jul 2018 – Jan 2019}
 	\begin{itemize}
-		\item Developed a workforce scheduling system for over 1,500 employees, improving planning and resource allocation.
-		\item Automated certificate and statistics generation, reducing manual workload by 40\%.
+		\item Developed and deployed early production software components for a workforce scheduling system exposed to real-world public users, serving as an initial hands-on experience delivering real-world applications.
+		\item Automated generation of operational certificates and basic statistics, reducing manual administrative workload by approximately 40\%.
 	\end{itemize}
 	
 	% ===== Education =====
 	\section*{Education}
 	
-	\textbf{Bachelor's Degree in Systems Engineering} \hfill \textit{Expected 2026} \\  
-	Universidad Central — Bogotá, Colombia \\
-	Focus on software engineering principles, systems architecture, and information systems management.
+	\textbf{Systems Engineering} \\  
+	Universidad Central — Bogotá, Colombia \hfill \textit{In progress}  
 	
-	\textbf{Associate Degree in Analysis and Development of Information Systems} \hfill \textit{2019} \\  
-	Servicio Nacional de Aprendizaje - Bogotá, Colombia \\
-	Training in database design, web development, and project deployment.
+	\textbf{Associate Degree in Analysis and Development of Information Systems} \\
+	Servicio Nacional de Aprendizaje (SENA) — Bogotá, Colombia \hfill \textit{2019}
 	
-	\textbf{Technical Certificate in Software Programming} \hfill \textit{2016} \\
-	Servicio Nacional de Aprendizaje - Bogotá, Colombia \\
-	Introductory coursework in programming logic, algorithms, and desktop applications.
+	\textbf{Technical Certificate in Software Programming} \\
+	Servicio Nacional de Aprendizaje (SENA) — Bogotá, Colombia \hfill \textit{2016}
 	
 	% ===== Training & Certifications =====
 	\section*{Training \& Certifications}
 	\begin{itemize}
+		\item Application \& Service Deployment with Docker \hfill SENA (2023)
 		\item Database Construction with MySQL \hfill SENA (2025)
-		\item Python: Variables and Control Structures \hfill SENA (2024)
-		\item Application and Service Deployment with Docker \hfill SENA (2023)
-		\item Web Development with PHP \hfill SENA (2018)
+		\item Agile Software Development with Scrum \hfill SENA (2025)
+		\item Cybersecurity Fundamentals \hfill SENA (2025)
+		\item Python for Backend and Data Processing \hfill SENA (2024)
+		\item Unsupervised Machine Learning: K-Means with Python \hfill SENA (2025)
 	\end{itemize}
 	
 	% ===== Technical Skills =====
 	\section*{Technical Skills}
-	\textbf{Languages:} PHP, JavaScript, SQL, Python (basic)\\
-	\textbf{Frameworks \& Libraries:} Laravel, Vue.js, Bootstrap, jQuery\\
-	\textbf{Databases:} MySQL, PostgreSQL\\
-	\textbf{Tools \& DevOps:} Git, Docker, Postman, PHPUnit, Swagger\\
-	\textbf{Practices:} RESTful APIs, MVC, Unit Testing, Agile Development, Dockerization
+	
+	{Backend \& System Design}
+	\begin{itemize}
+	\item Backend architecture with Laravel (service-oriented design, modular monoliths, RESTful APIs)
+	\item Design and evolution of relational data models (MySQL, PostgreSQL)
+	\item API versioning, authentication, authorization, and error-handling strategies
+	\end{itemize}
+	
+	{Scalability \& Reliability}
+	\begin{itemize}
+		\item Containerized deployments using Docker across production environments
+		\item CI/CD pipelines using GitLab CI and Bitbucket Pipelines for automated build, test, and deployment workflows
+		\item Cloud infrastructure usage on AWS (EC2 for compute, S3 for object storage) in production systems
+		\item Test-driven development (PHPUnit), integration testing, and CI-friendly workflows
+		\item Refactoring legacy systems for maintainability, stability, and performance
+	\end{itemize}
+	
+	{Data \& Intelligence}
+	\begin{itemize}
+	\item Data processing and scripting with Python
+	\item Applied machine learning fundamentals (clustering, data exploration)
+	\item Basic security principles for backend systems (authentication, data protection)
+	\end{itemize}
+
+	{Collaboration \& Delivery}
+	\begin{itemize}
+	\item Agile development (Scrum)
+	\item Technical documentation and cross-functional collaboration
+	\item Code reviews, mentoring, and knowledge sharing
+	\end{itemize}
 	
 \end{document}

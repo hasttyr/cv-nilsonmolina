@@ -1,4 +1,4 @@
-\documentclass[10pt,letterpaper]{article}
+\documentclass[9pt,letterpaper]{extarticle}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -8,138 +8,133 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 
-\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+\setlist[itemize]{itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt, leftmargin=*}
+\setlength{\parskip}{0.8em}
 \setlength{\parindent}{0pt}
 
-\renewcommand{\baselinestretch}{1.08}
+\renewcommand{\baselinestretch}{1.09}
 
-\titlespacing*{\section}{0pt}{0.7em}{0.35em}
+\titlespacing*{\section}{0pt}{0.5em}{0.25em}
 
 \begin{document}
 	
 	\begin{center}
-		{\LARGE \textbf{Nilson Aldair Molina Rengifo}}\\[4pt]
-		\textbf{Full-Stack Software Developer}\\[6pt]
-		\href{mailto:nilsonmolina@outlook.com}{nilsonmolina@outlook.com} • 
-		\href{https://wa.me/573209030250}{(+57) 320 903 0250} • 
+		{\LARGE \textbf{Nilson Aldair Molina Rengifo}}
+		
+		\textbf{Software Developer (Backend / Full‑Stack)}
+		
+		\href{mailto:nilsonmolina@outlook.com}{nilsonmolina@outlook.com} •
+		\href{https://wa.me/573209030250}{(+57) 320 903 0250} •
 		\href{https://linkedin.com/in/nilsonmolina}{linkedin.com/in/nilsonmolina}
 	\end{center}
 	
 	\hrule
 	
-	% ===== Professional Summary =====
 	\section*{Professional Summary}
-	Software engineer with a strong backend focus and experience working on production systems at different stages of maturity. Most of my work has been around Laravel-based platforms, where I’ve handled data-intensive systems, APIs consumed by mobile applications, and internal tools supporting operational workflows. I usually work close to system boundaries, making pragmatic technical decisions around data quality, performance, reliability, and API contracts. Over time, my responsibilities have naturally grown from guided execution to full technical ownership in individual contributor roles.
+		Software Developer with 6+ years of experience building, stabilizing, and evolving production backend systems and APIs in business-critical environments. Strong background in backend-heavy and full-stack contexts, working closely with product, frontend, and business stakeholders to deliver reliable, scalable features end to end.
+		
+		Experienced in owning systems and features from design through production, including architecture decisions, data modeling, performance optimization, and production stabilization. Proven ability to operate effectively in complex codebases, improve legacy systems, and deliver under real operational constraints.
 	
-	% ===== Professional Experience =====
+		Comfortable taking responsibility in high-impact roles, contributing to technical direction, and maintaining high engineering standards while balancing speed, quality, and business needs.
+	
 	\section*{Professional Experience}
 	
-	\textbf{Software Engineer (Freelance)} — {PC Pronto}, {Bogotá, Colombia}
-	\hfill \textit{Jul 2025 – Present}
+	\textbf{Software Engineer (Freelance)} - {PC Pronto}
+	\hfill \textit{Jul 2025 - Present}
 	\begin{itemize}
-		\item Designing and implementing an integration layer between SuiteCRM and Shopify to centralize retail sales data into a core backend system.
-		\item Defining data synchronization flows, validation rules, and transformation logic to ensure consistency between operational and centralized systems.
-		\item Translating high-level business requirements into technically feasible solutions, clarifying scope, constraints, and trade-offs around automation initiatives.
-		\item Working with cloud-hosted services and APIs to support reliable data exchange across platforms.
+		\item Designed and delivered backend services supporting an e‑commerce platform with real production traffic, focusing on scalability, data consistency, and fault tolerance.
+		\item Built and maintained RESTful APIs integrating Shopify with a centralized backend system using Node.js, AWS, and PostgreSQL.
+		\item Implemented bidirectional data synchronization with SuiteCRM, defining validation rules and conflict‑resolution logic across systems.
+		\item Took ownership of features from architecture and implementation through deployment and post‑release stabilization.
+		\item Collaborated directly with business stakeholders to translate operational needs into maintainable technical solutions.
 	\end{itemize}
 	
-	\textbf{Software Consultant} – {Amaris Consulting}, {Bogotá, Colombia}
-	\hfill \textit{Feb 2025 – Apr 2025}
+	\textbf{Software Consultant} - {Amaris Consulting}
+	\hfill \textit{Feb 2025 - Apr 2025}
 	\begin{itemize}
-		\item Contributed to backend feature design and implementation in a high-velocity agile environment, translating ambiguous business requirements into scalable solutions.
-		\item Identified and addressed systemic backend issues, reducing recurring production bugs and lowering overall incident volume by approximately 30\%.
-		\item Optimized critical backend modules through refactoring and query improvements, achieving a 20\% reduction in response times.
+		\item Contributed to the maintenance and evolution of a large monolithic backend system managing electronic device repair operations across multiple locations.
+		\item Implemented backend features and workflow adjustments using PHP (Yii, Laravel) in business‑critical processes.
+		\item Diagnosed and resolved recurring production incidents, improving system stability and operational reliability.
+		\item Improved performance through targeted refactoring and database query optimization (PostgreSQL).
+		\item Actively participated in code reviews and agile ceremonies within a Scrum environment.
 	\end{itemize}
 	
-	\textbf{Development Engineer} – {Pacaribe S.A. E.S.P.}, {Bogotá, Colombia}
-	\hfill \textit{Jul 2024 – Jan 2025}
+	\textbf{Development Engineer} - {Pacaribe S.A. E.S.P.}
+	\hfill \textit{Jul 2024 - Jan 2025}
 	\begin{itemize}
-		\item Designed and implemented backend features in Laravel-based internal systems handling large-scale, heterogeneous datasets, focusing on data quality, efficient access patterns, and system stability.
-		\item Led data depuration and validation strategies to prevent low-quality or inconsistent data from reaching frontend applications, improving performance and reducing downstream processing overhead.
-		\item Optimized database queries and data models to support high-volume information retrieval, significantly improving response times and overall system efficiency.
+		\item Worked on multiple backend-driven systems that centralized operational, regulatory, and analytical data across the organization, primarily using Laravel, Node.js, Vue.js, PostgreSQL, and Oracle (read-only).
+		\item Contributed to the evolution of a core Laravel/Vue monolithic platform that aggregated data from internal applications and ETL processes, serving as the main operational system for the company.
+		\item Designed and implemented backend improvements for additional Node.js-based services supporting regulatory-driven business logic, including the introduction of structured data models and ORM-based access to improve maintainability and data consistency.
+		\item Improved database performance by identifying slow and non-indexed queries, removing unnecessary data access patterns, and optimizing PostgreSQL queries used by high-traffic workflows.
+		\item Implemented asynchronous processing using Laravel queues, custom commands, and background jobs to handle long-running and data-intensive operations reliably.
+		\item Developed a task planning module within the core system, supporting hierarchical tasks, deadlines, and automated email alerts, improving coordination and operational visibility across teams.
+		\item Took responsibility for solution delivery and quality within sprint cycles, with performance evaluated based on effectiveness, stability, and maintainability of delivered features.
+		\item Provided technical follow-up and operational continuity for an existing .NET-based ETL process during a management transition, ensuring uninterrupted daily execution and issue tracking.
 	\end{itemize}
 	
-	\textbf{Laravel Developer (Freelance)} – {FrenziApp}
-	\hfill \textit{Feb 2024 – Apr 2024}
+	\textbf{Laravel Developer (Freelance)} - {FrenziApp}
+	\hfill \textit{Feb 2024 - Apr 2024}
 	\begin{itemize}
-		\item Took ownership of backend technical decisions for an existing Laravel system consumed by two native mobile applications, aligning API design and behavior with mobile client requirements.
-		\item Refactored and stabilized backend logic and API endpoints, achieving approximately a 35\% improvement in response times.
-		\item Designed and implemented new backend modules for route calculation and cost estimation, addressing core domain logic in a transportation platform.
-		\item Defined and documented backend contracts using Swagger, reducing integration friction and ambiguity for mobile development teams.
-		\item Strengthened backend reliability through integration testing, structured error handling, and stricter input validation.
+		\item Owned a Laravel‑based REST API powering native Android and iOS applications for a taxi booking platform.
+		\item Refactored backend code to improve clarity, maintainability, and API design consistency.
+		\item Optimized API responses and payload structures, significantly improving response times.
+		\item Introduced Swagger / OpenAPI documentation and implemented unit tests (PHPUnit) for core business logic.
 	\end{itemize}
 	
-	\textbf{Laravel Developer (Freelance)} — {Ink Master Colombia}
-	\hfill \textit{Aug 2023 – Feb 2024}
+	\textbf{Full-Stack Software Developer (Freelance)} - {Ink Master Colombia}
+	\hfill \textit{Aug 2023 - Feb 2024}
 	\begin{itemize}
-		\item Designed and built a monolithic CRM system using Laravel and Vue.js, taking full responsibility for backend and frontend architecture, data modeling, and deployment decisions.
-		\item Implemented core business modules (clients, inventory/products, sales, suppliers), structuring domain logic to support daily operational workflows.
-		\item Automated generation of sales receipts and transactional records (PDF), reducing document processing time by approximately 70\%.
-		\item Established containerized deployment and test automation to ensure environment consistency, reliability, and maintainability.
+		\item Designed and implemented a centralized internal management system using Laravel, Vue.js, and PostgreSQL to support core business operations.
+		\item Developed backend modules for clients, inventory, products, suppliers, and sales management, focusing on data consistency and reliable business workflows.
+		\item Took full technical ownership of the system, from data modeling and backend logic to frontend integration and initial deployment.
+		\item Deployed the system to an AWS-based environment during its initial rollout, ensuring production readiness.
+		\item Centralized previously fragmented operational data into a single platform, improving visibility and coordination across business areas.
+		\item Improved the company's sales and operational processes by providing structured access to customer, inventory, and supplier information.
 	\end{itemize}
-	
-	\textbf{Computer Programmer} — {Solvo Global}, {Bogotá, Colombia}
+
+	\textbf{Full-Stack Software Developer} - {Solvo Global}
 	\hfill \textit{Sep 2022 – Jun 2023}
 	\begin{itemize}
-		\item Contributed to a Laravel and Vue.js monolithic platform used for nursing shift scheduling across the United States, operating in a healthcare domain with high reliability requirements.
-		\item Worked with an event-driven workflow engine (Camunda) integrated into the backend to handle asynchronous processes and improve system resilience under failure scenarios.
-		\item Improved code quality and system stability through test-driven development and structured code reviews, contributing to a 45\% reduction in reported defects.
-		\item Developed reusable backend modules that were later adopted by other teams, promoting consistency and reuse across the platform.
+		\item Worked as an embedded engineer for a U.S.‑based client, contributing to backend‑focused features and system maintenance.
+		\item Implemented and adjusted application logic in collaboration with distributed teams, following client‑defined delivery processes.
+		\item Supported production workflows, troubleshooting issues and ensuring operational continuity.
+		\item Worked within a client-driven, outsourced engineering model, adapting to external delivery standards, timelines, and quality expectations.
 	\end{itemize}
 	
-	\textbf{Developer I} — {THOMAS MTI}, {Bogotá, Colombia}
-	\hfill \textit{Apr 2021 – Nov 2021}
+	\section*{Professional Experience (Early Career - Consolidated)}
+	
+	\textbf{Independent Development / Career Transition}
+	\hfill \textit{Dec 2021 - Aug 2022}
 	\begin{itemize}
-		\item Contributed to the migration of an enterprise application from Delphi to Angular/.NET, implementing assigned components under senior guidance and helping reduce long-term maintenance costs.
-		\item Collaborated within a small team to improve UI/UX based on internal user feedback, supporting usability improvements in legacy workflows.
-		\item Developed and executed data migration scripts, ensuring data integrity and consistency during system transitions.
+		\item Engaged in independent software development, technical upskilling, and freelance‑style problem solving.
+		\item Strengthened backend fundamentals, database design, and API architecture through hands‑on projects and self‑directed learning.
 	\end{itemize}
 	
-	\textbf{Software Development Analyst} — {CLTech}, {Bogotá, Colombia}
-	\hfill \textit{Jul 2019 – Feb 2021}
+	\textbf{Software Developer} - {CLTech, THOMAS MTI, Recaudo Bogotá S.A.S.}
+	\hfill \textit{Jul 2018 - Nov 2021}
 	\begin{itemize}
-		\item Implemented software components for clinical laboratory systems aligned with ISO 15189 standards, transitioning from junior to mid-level responsibilities under senior guidance.
-		\item Contributed to the gradual decomposition of a monolithic application into RESTful APIs, gaining hands-on experience in modular backend design.
-		\item Delivered improvements to CRM-related modules that supported operational workflows across multiple departments.
+		\item Contributed to backend‑driven enterprise systems across public services, healthcare, and workforce management domains.
+		\item Supported monolithic platforms and early RESTful API initiatives, gaining hands‑on experience in backend modularization.
+		\item Participated in data migrations, legacy modernization efforts, and internal tooling improvements.
+		\item Built a strong foundation in production environments, data handling, and cross‑functional collaboration.
 	\end{itemize}
 	
-	\textbf{Software Developer} — {Recaudo Bogotá S.A.S.}, {Bogotá, Colombia}
-	\hfill \textit{Jul 2018 – Jan 2019}
-	\begin{itemize}
-		\item Developed and deployed early production software components for a workforce scheduling system exposed to real-world public users, serving as an initial hands-on experience delivering production software.
-		\item Automated generation of operational certificates and basic statistics, reducing manual administrative workload by approximately 40\%.
-	\end{itemize}
-	
-	% ===== Education =====
 	\section*{Education}
 	
-	\textbf{Systems Engineering} \\  
-	Universidad Central — Bogotá, Colombia \hfill \textit{In progress}  
+	\textbf{B.Sc. in Systems Engineering and Computer Science} \textit{(in progress)} \hfill {Universidad Central (CO)}
 	
-	\textbf{Associate Degree in Analysis and Development of Information Systems} \\
-	Servicio Nacional de Aprendizaje (SENA) — Bogotá, Colombia \hfill \textit{2019}
+	\textbf{Associate Degree in Analysis and Development of Information Systems} \hfill {Servicio Nacional de Aprendizaje - SENA}
 	
-	\textbf{Technical Certificate in Software Programming} \\
-	Servicio Nacional de Aprendizaje (SENA) — Bogotá, Colombia \hfill \textit{2016}
+	\textbf{Technical Certificate in Software Programming} \hfill {Servicio Nacional de Aprendizaje - SENA}
 	
-	% ===== Training & Certifications =====
 	\section*{Training \& Certifications}
 	\begin{itemize}
-		\item Application \& Service Deployment with Docker \hfill SENA (2023)
-		\item Database Construction with MySQL \hfill SENA (2025)
-		\item Agile Software Development with Scrum \hfill SENA (2025)
-		\item Cybersecurity Fundamentals \hfill SENA (2025)
-		\item Python for Backend and Data Processing \hfill SENA (2024)
-		\item Unsupervised Machine Learning: K-Means with Python \hfill SENA (2025)
+		\item Application \& Service Deployment with Docker \hfill 2023
+		\item Database Construction with MySQL \hfill 2025
+		\item Agile Software Development with Scrum \hfill 2025
+		\item Cybersecurity Fundamentals \hfill 2025
+		\item Python for Backend and Data Processing \hfill 2024
+		\item Unsupervised Machine Learning: K-Means with Python \hfill 2025
 	\end{itemize}
-	
-	% ===== Technical Skills =====
-	\section*{Technical Skills}
-
-	Backend: PHP, Laravel, RESTful API design, modular monoliths \\
-	Data: MySQL, PostgreSQL, data modeling, query optimization \\
-	Infrastructure: Docker, AWS (EC2, S3), GitLab CI, Bitbucket Pipelines \\
-	Quality: PHPUnit, integration testing, refactoring legacy systems \\
-	Ways of working: Agile (Scrum), technical documentation, cross-team collaboration
 
 \end{document}

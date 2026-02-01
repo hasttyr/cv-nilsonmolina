@@ -1,37 +1,45 @@
 # CV Nilson Molina (LaTeX)
 
-Repositorio con las fuentes en LaTeX del currículum de Nilson Aldair Molina Rengifo (versiones en español e inglés). El propósito es mantener una fuente editable y reproducible para generar PDFs cuando sea necesario.
+Repositorio con las fuentes en LaTeX de documentos profesionales de Nilson Aldair Molina Rengifo. El propósito es mantener una fuente editable, versionada y reproducible para generar PDFs cuando sea necesario.
 
 ## Estructura
 
-- `CV.NilsonMolina.tex` — Fuente en inglés.
-- `CV.NilsonMolina.ES.tex` — Fuente en español.
-- Archivos auxiliares generados por LaTeX (`*.aux`, `*.log`, `*.toc`, etc.).
+### Currículum Vitae
+- `CV.NilsonMolina.tex` — CV en inglés (versión principal).
+- `CV.NilsonMolina.ES.tex` — CV en español.
+
+### Cartas de Presentación
+- `cover-letter.tex` — Plantilla de carta de presentación en inglés.
+
+### Archivos Generados
+- `*.aux`, `*.bbl`, `*.blg`, `*.log`, `*.out` — Archivos auxiliares de compilación LaTeX.
 
 ## Requisitos
 
 1. Una distribución de LaTeX instalada (MiKTeX o TeX Live).
-2. `pdflatex` disponible en la variable PATH.
+2. `pdflatex` y `bibtex` disponibles en la variable PATH.
 3. (Opcional) Editor recomendado: TeXstudio o VS Code con LaTeX Workshop.
 
 ## Cómo compilar (PowerShell)
 
-Abre PowerShell en la carpeta del repositorio y ejecuta uno de los siguientes comandos según la versión que quieras generar:
+Abre PowerShell en la carpeta del repositorio y ejecuta los siguientes comandos según el documento que quieras generar:
 
+### Compilar CV en inglés
 ```powershell
-# Compilar la versión en inglés
 pdflatex "CV.NilsonMolina.tex"
+bibtex "CV.NilsonMolina"
+pdflatex "CV.NilsonMolina.tex"
+pdflatex "CV.NilsonMolina.tex"
+```
 
-# Compilar la versión en español
+### Compilar CV en español
+```powershell
 pdflatex "CV.NilsonMolina.ES.tex"
 ```
 
-Si el documento usa referencias internas o índices, ejecuta `pdflatex` dos veces. Si faltan paquetes, MiKTeX suele preguntar para instalarlos automáticamente.
-
-## Limpiar archivos auxiliares (PowerShell)
-
-Para eliminar archivos auxiliares generados por LaTeX:
-
+### Compilar carta de presentación
 ```powershell
-Remove-Item -Path "*.aux","*.log","*.toc","*.out" -ErrorAction SilentlyContinue
+pdflatex "cover-letter.tex"
 ```
+
+> **Nota:** La doble compilación es necesaria para resolver referencias cruzadas y bibliografía correctamente. Si faltan paquetes, MiKTeX suele preguntar para instalarlos automáticamente.

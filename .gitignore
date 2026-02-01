@@ -46,4 +46,8 @@
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# ==========================
+# Custom ignores
+# ==========================
 CL.*.pdf
